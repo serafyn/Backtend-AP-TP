@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.portfolioap.backendportfolioap.Entity;
 
 import javax.persistence.Entity;
@@ -10,18 +5,16 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-
-
 @Entity
 public class Experiencia {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombreE;
     private String descripcionE;
-    
-    //Constructor
 
+    //Constructor
     public Experiencia() {
     }
 
@@ -29,9 +22,8 @@ public class Experiencia {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
     }
-    
-    //Getters and setters
 
+    //Getters and setters
     public int getId() {
         return id;
     }
@@ -55,5 +47,5 @@ public class Experiencia {
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
     }
-    
+
 }
