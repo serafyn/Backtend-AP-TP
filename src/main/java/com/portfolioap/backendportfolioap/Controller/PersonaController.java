@@ -42,7 +42,7 @@ public class PersonaController {
         return new ResponseEntity(persona, HttpStatus.OK);
     }
 
-    
+    /*
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id) {
         if (!personaService.existsById(id)) {
@@ -67,7 +67,7 @@ public class PersonaController {
 
         return new ResponseEntity(new Mensaje("Persona agregada"), HttpStatus.OK);
     }
-     
+     */
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoPersona dtopersona) {
         //Validamos si existe el ID
