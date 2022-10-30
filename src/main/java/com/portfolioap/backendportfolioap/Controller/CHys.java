@@ -20,9 +20,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-//@CrossOrigin(origins = "http://localhost:4200")
-@CrossOrigin(origins = "https://frontendap-f4505.web.app")
 @RequestMapping("/skill")
+@CrossOrigin(origins = {"http://localhost:4200","https://frontendap-f4505.web.app"})
 public class CHys {
 
     @Autowired
