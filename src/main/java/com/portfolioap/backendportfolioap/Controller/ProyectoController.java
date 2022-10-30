@@ -18,9 +18,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-//@CrossOrigin(origins = "https://portfolioap-2022.web.app")
-@CrossOrigin(origins = "http://localhost:4200")
+
 @RequestMapping("proyecto")
+//@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontendap-f4505.web.app")
 @RestController
 public class ProyectoController {
 
